@@ -1,0 +1,29 @@
+mkvirtualenv envs
+workon envs
+python -m pip install Django
+django-admin startproject mysite
+cd mysite
+#check the server by running it (server should be run from the directory which has 'manage.py')
+python manage.py runserver
+#Create the app 
+python manage.py startapp Gowtham
+# add the app name in the settings.py to INSTALLED APPS
+# update project Url with URL of the app 
+cd Gowtham 
+mkdir templates
+cd templates
+mkdir Gowtham 
+cd Gowtham 
+# create the html file with the data to view on the page 
+echo ^<html^>
+^<head^>
+^<title^>Gowtham's webpage^</title^>
+^</head^>
+^<body^>
+^<br^>^<br^>^<br^>
+^<h1 align="center"^>This is Gowtham's Page^</h1^>
+^</body^>
+^</html^> > index.html
+# add /app name to the url/ (example: http://127.0.0.1:8000/Gowtham/)
+
+
